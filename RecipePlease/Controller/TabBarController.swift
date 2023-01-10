@@ -10,22 +10,19 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    //MARK: Propreties
     let tabBarMenu = UITabBarItem.appearance()
     let fontTabBar = [NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 18)]
     
+    //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarCustomized()
-      
-        
-        // Do any additional setup after loading the view.
     }
 
+    //MARK: Private Methods
     private func tabBarCustomized() {
         tabBarMenu.setTitleTextAttributes(fontTabBar as [NSAttributedString.Key : Any], for: .normal)
     }
-    
-
-
 
 }
