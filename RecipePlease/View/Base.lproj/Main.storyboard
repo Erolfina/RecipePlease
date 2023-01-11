@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +14,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Zdi-Fm-OrB">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.21568629149999999" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AKq-rz-p3u">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
@@ -96,7 +95,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="jZo-ug-HJG">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.21568629149999999" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="B2w-R2-P6H">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
@@ -121,7 +120,7 @@
         <!--ReciPlease-->
         <scene sceneID="yB4-HR-dsJ">
             <objects>
-                <viewController id="MIR-1e-YNx" sceneMemberID="viewController">
+                <viewController id="MIR-1e-YNx" customClass="SearchViewController" customModule="RecipePlease" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ALc-Ye-Cnw">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,14 +140,17 @@
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TXA-rV-SF5">
                                                 <rect key="frame" x="0.0" y="75" width="430" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Lemon, cheese, sausages ... " minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="9GR-Ls-fn0">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lemon, cheese, sausages ... " minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="9GR-Ls-fn0">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="suM-co-rjQ"/>
                                                         </constraints>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="yes" smartInsertDeleteType="yes"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="MIR-1e-YNx" id="f5O-6R-QE3"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTk-XM-SiI">
                                                         <rect key="frame" x="355" y="0.0" width="75" height="50"/>
@@ -161,6 +163,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Add">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="addIngredients:" destination="MIR-1e-YNx" eventType="touchUpInside" id="ZbR-c2-8Rw"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -174,7 +179,7 @@
                                             <constraint firstItem="TXA-rV-SF5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IzJ-Pm-MCD" secondAttribute="bottom" constant="10" id="Qqr-3q-ih3"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rjx-ds-y3O">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rjx-ds-y3O" userLabel="Affichage">
                                         <rect key="frame" x="0.0" y="125" width="430" height="621"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QIh-Mn-ZzY">
@@ -223,6 +228,7 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.21568629149999999" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="Kcm-h8-sLp" firstAttribute="top" secondItem="QIh-Mn-ZzY" secondAttribute="bottom" constant="5" id="66o-d4-XDf"/>
                                             <constraint firstItem="QIh-Mn-ZzY" firstAttribute="top" secondItem="Rjx-ds-y3O" secondAttribute="top" constant="10" id="7td-Ec-vE9"/>
@@ -252,18 +258,31 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oSW-0J-9lK"/>
                         <color key="backgroundColor" red="0.21568629149999999" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oSW-0J-9lK" firstAttribute="bottom" secondItem="Mko-y2-upH" secondAttribute="bottom" id="30z-L4-HjL"/>
                             <constraint firstItem="Mko-y2-upH" firstAttribute="top" secondItem="oSW-0J-9lK" secondAttribute="top" id="96x-BS-QVD"/>
                             <constraint firstItem="Mko-y2-upH" firstAttribute="leading" secondItem="oSW-0J-9lK" secondAttribute="leading" id="OHl-KH-e7o"/>
                             <constraint firstItem="Mko-y2-upH" firstAttribute="trailing" secondItem="oSW-0J-9lK" secondAttribute="trailing" id="jlw-n7-21L"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Aa3-YJ-Mle" appends="YES" id="8y6-H1-803"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="ReciPlease" id="8a9-vp-Vq1">
                         <barButtonItem key="backBarButtonItem" title="Back" id="HJv-6u-pLm"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="labelIngredients" destination="Kcm-h8-sLp" id="K7g-Fz-H9m"/>
+                        <outlet property="textField" destination="9GR-Ls-fn0" id="1cR-P3-jAw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TT9-Tm-G3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Aa3-YJ-Mle">
+                    <connections>
+                        <action selector="dismiss:" destination="MIR-1e-YNx" id="VKb-mG-Rwi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-651.62790697674416" y="-1077.6824034334766"/>
         </scene>
@@ -294,9 +313,4 @@
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
