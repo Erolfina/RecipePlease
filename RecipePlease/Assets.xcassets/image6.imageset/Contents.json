@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "https___cdn.cnn.com_cnnnext_dam_assets_200402101927-18-best-turkish-foods-lahmacun.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
