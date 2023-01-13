@@ -33,9 +33,11 @@ class SearchViewController: UIViewController {
         
     }
     
-    private func updateIngredientsList() {
-       
+    @IBAction func clearList(_ sender: Any) {
+        ingredientsInFridge = [""]
+        labelIngredients.text = ""
     }
+  
 }
 
 extension SearchViewController: UITextFieldDelegate {

@@ -13,25 +13,25 @@
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4d3da02e5d748bdc706b76258714d305",
                 "label": "Tomato-Basil Lasagna Soup",
-                "image": "https://edamam-product-images.s3.amazonaws.com/web-img/621/62118911d1c95fe1b3fc12f61898a6a8.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQC8AZplSPi6LHxVh%2BwmlSJLsyqm691LnRamnNaf2qI4yQIgPlVabaDuimZgKGN8d33CUVyQvtI4r9VgwGzGoShwKcoqzAQIVBAAGgwxODcwMTcxNTA5ODYiDKLe75WRFW%2BSzIq%2BHyqpBAcXfA4u08uy5yhEsCOPOOydpXetet7m1%2BHQPD8QCAtxGd%2BUIdibtZMs1eLzNEFeVYnfl%2FvtSb4IKYRBC2lWL6%2F7kCk4nMvVCsU5yl%2Bk%2F9Hc5Fy%2FRMrd1goMo%2FwEowDIjyo%2BbxDBXq4LdiBeaU1cS%2BNjGv3PHW%2FeZsDZmkyocZ23%2BORGa%2FGqDPzw0j72N4O6JI1cLeMXxd%2BPOvhQcQ1QKyyutklCbY1HvQNQ6H9mGEE30DjgVjw9mf7ahpv5dqSZ%2FpaHqJSM%2BrmPoDaDdQgw8OC0q90gfr8YUeLXZ5mw34Pq%2FgwDG9%2FkDo2AJEZLuS1yEuQIE6tiPzEb8anqjJ2a9K%2BMJaNy1cVRs6Coib377mqAA4EDkhwKDWNJlKNKCZwI8xE25XOLwnYWDA%2FGjsmAEVIMA1PPFmJLnCJwfNK0L8lUcZKKaUgD5PauOU%2FFD4zaZlwQqXfdexEX%2BrPirYrKz53%2Fj3Ql5Rt5ey25JcP0qKNzVi4qtutR%2BpTcIXHJXk3KVnoeyTZgqFXNQQFcm6iCOr8xVHhJMUPwf8LdRumi2%2BOo88gH5v4f4zSoa7V4zYBsemjZnEnSeZovm4DHu0wIAY7EAFAL2XGTBuR0Cnd0uETKthc2%2FA0vZn4%2FoBz0MzhH901T6DZXRju0X7pFOaDZQ9vSm67UUaNNMIBtHUhbyzxCi4zqqbn1umUKMFFo3G3b%2BghsWCXKGn5IYAtr8ahO29slDBaL3B47uLMwy%2BDonQY6qQFMs8Vdb4jqT9c6mEjine9XXHSOCMsCn4wgXCkVKbphYd9dBZwSjmmHg0U%2F7WT%2FAYiXzS1SgkflbadSgSNKisuc8Q8mvka9sUcZrpml6noUcXvgkoZIf%2F9dr3ILkcikAJQWv0eUsGU333qhsTyG%2FDJGfVNSk6x%2BAxODsxmscbw5SrTkvbenk79blOzktTiI%2Fu%2BqOz8B%2FxZ7Lg0ci93VmkFvjoLMeFdSh3qc&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230108T031642Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFP6BNUJ7X%2F20230108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=87bab0866a58994a768a4043b3638a024a5ea81feb71a1469ba9aed44651cf03",
+                "image": "image1",
                 "images": {
                     "THUMBNAIL": {
-                        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/621/62118911d1c95fe1b3fc12f61898a6a8-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQC8AZplSPi6LHxVh%2BwmlSJLsyqm691LnRamnNaf2qI4yQIgPlVabaDuimZgKGN8d33CUVyQvtI4r9VgwGzGoShwKcoqzAQIVBAAGgwxODcwMTcxNTA5ODYiDKLe75WRFW%2BSzIq%2BHyqpBAcXfA4u08uy5yhEsCOPOOydpXetet7m1%2BHQPD8QCAtxGd%2BUIdibtZMs1eLzNEFeVYnfl%2FvtSb4IKYRBC2lWL6%2F7kCk4nMvVCsU5yl%2Bk%2F9Hc5Fy%2FRMrd1goMo%2FwEowDIjyo%2BbxDBXq4LdiBeaU1cS%2BNjGv3PHW%2FeZsDZmkyocZ23%2BORGa%2FGqDPzw0j72N4O6JI1cLeMXxd%2BPOvhQcQ1QKyyutklCbY1HvQNQ6H9mGEE30DjgVjw9mf7ahpv5dqSZ%2FpaHqJSM%2BrmPoDaDdQgw8OC0q90gfr8YUeLXZ5mw34Pq%2FgwDG9%2FkDo2AJEZLuS1yEuQIE6tiPzEb8anqjJ2a9K%2BMJaNy1cVRs6Coib377mqAA4EDkhwKDWNJlKNKCZwI8xE25XOLwnYWDA%2FGjsmAEVIMA1PPFmJLnCJwfNK0L8lUcZKKaUgD5PauOU%2FFD4zaZlwQqXfdexEX%2BrPirYrKz53%2Fj3Ql5Rt5ey25JcP0qKNzVi4qtutR%2BpTcIXHJXk3KVnoeyTZgqFXNQQFcm6iCOr8xVHhJMUPwf8LdRumi2%2BOo88gH5v4f4zSoa7V4zYBsemjZnEnSeZovm4DHu0wIAY7EAFAL2XGTBuR0Cnd0uETKthc2%2FA0vZn4%2FoBz0MzhH901T6DZXRju0X7pFOaDZQ9vSm67UUaNNMIBtHUhbyzxCi4zqqbn1umUKMFFo3G3b%2BghsWCXKGn5IYAtr8ahO29slDBaL3B47uLMwy%2BDonQY6qQFMs8Vdb4jqT9c6mEjine9XXHSOCMsCn4wgXCkVKbphYd9dBZwSjmmHg0U%2F7WT%2FAYiXzS1SgkflbadSgSNKisuc8Q8mvka9sUcZrpml6noUcXvgkoZIf%2F9dr3ILkcikAJQWv0eUsGU333qhsTyG%2FDJGfVNSk6x%2BAxODsxmscbw5SrTkvbenk79blOzktTiI%2Fu%2BqOz8B%2FxZ7Lg0ci93VmkFvjoLMeFdSh3qc&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230108T031642Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFP6BNUJ7X%2F20230108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=540fdde2ee497a31759c9842e8676d16678c8cabb981bbbf75a72a0aebc78f02",
+                        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg",
                         "width": 100,
                         "height": 100
                     },
                     "SMALL": {
-                        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/621/62118911d1c95fe1b3fc12f61898a6a8-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQC8AZplSPi6LHxVh%2BwmlSJLsyqm691LnRamnNaf2qI4yQIgPlVabaDuimZgKGN8d33CUVyQvtI4r9VgwGzGoShwKcoqzAQIVBAAGgwxODcwMTcxNTA5ODYiDKLe75WRFW%2BSzIq%2BHyqpBAcXfA4u08uy5yhEsCOPOOydpXetet7m1%2BHQPD8QCAtxGd%2BUIdibtZMs1eLzNEFeVYnfl%2FvtSb4IKYRBC2lWL6%2F7kCk4nMvVCsU5yl%2Bk%2F9Hc5Fy%2FRMrd1goMo%2FwEowDIjyo%2BbxDBXq4LdiBeaU1cS%2BNjGv3PHW%2FeZsDZmkyocZ23%2BORGa%2FGqDPzw0j72N4O6JI1cLeMXxd%2BPOvhQcQ1QKyyutklCbY1HvQNQ6H9mGEE30DjgVjw9mf7ahpv5dqSZ%2FpaHqJSM%2BrmPoDaDdQgw8OC0q90gfr8YUeLXZ5mw34Pq%2FgwDG9%2FkDo2AJEZLuS1yEuQIE6tiPzEb8anqjJ2a9K%2BMJaNy1cVRs6Coib377mqAA4EDkhwKDWNJlKNKCZwI8xE25XOLwnYWDA%2FGjsmAEVIMA1PPFmJLnCJwfNK0L8lUcZKKaUgD5PauOU%2FFD4zaZlwQqXfdexEX%2BrPirYrKz53%2Fj3Ql5Rt5ey25JcP0qKNzVi4qtutR%2BpTcIXHJXk3KVnoeyTZgqFXNQQFcm6iCOr8xVHhJMUPwf8LdRumi2%2BOo88gH5v4f4zSoa7V4zYBsemjZnEnSeZovm4DHu0wIAY7EAFAL2XGTBuR0Cnd0uETKthc2%2FA0vZn4%2FoBz0MzhH901T6DZXRju0X7pFOaDZQ9vSm67UUaNNMIBtHUhbyzxCi4zqqbn1umUKMFFo3G3b%2BghsWCXKGn5IYAtr8ahO29slDBaL3B47uLMwy%2BDonQY6qQFMs8Vdb4jqT9c6mEjine9XXHSOCMsCn4wgXCkVKbphYd9dBZwSjmmHg0U%2F7WT%2FAYiXzS1SgkflbadSgSNKisuc8Q8mvka9sUcZrpml6noUcXvgkoZIf%2F9dr3ILkcikAJQWv0eUsGU333qhsTyG%2FDJGfVNSk6x%2BAxODsxmscbw5SrTkvbenk79blOzktTiI%2Fu%2BqOz8B%2FxZ7Lg0ci93VmkFvjoLMeFdSh3qc&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230108T031642Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFP6BNUJ7X%2F20230108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6bb64f5231259da05eeea9b09ae7ecc51f9183dd8f62248b7646b5dad1695c05",
+                        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg",
                         "width": 200,
                         "height": 200
                     },
                     "REGULAR": {
-                        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/621/62118911d1c95fe1b3fc12f61898a6a8.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQC8AZplSPi6LHxVh%2BwmlSJLsyqm691LnRamnNaf2qI4yQIgPlVabaDuimZgKGN8d33CUVyQvtI4r9VgwGzGoShwKcoqzAQIVBAAGgwxODcwMTcxNTA5ODYiDKLe75WRFW%2BSzIq%2BHyqpBAcXfA4u08uy5yhEsCOPOOydpXetet7m1%2BHQPD8QCAtxGd%2BUIdibtZMs1eLzNEFeVYnfl%2FvtSb4IKYRBC2lWL6%2F7kCk4nMvVCsU5yl%2Bk%2F9Hc5Fy%2FRMrd1goMo%2FwEowDIjyo%2BbxDBXq4LdiBeaU1cS%2BNjGv3PHW%2FeZsDZmkyocZ23%2BORGa%2FGqDPzw0j72N4O6JI1cLeMXxd%2BPOvhQcQ1QKyyutklCbY1HvQNQ6H9mGEE30DjgVjw9mf7ahpv5dqSZ%2FpaHqJSM%2BrmPoDaDdQgw8OC0q90gfr8YUeLXZ5mw34Pq%2FgwDG9%2FkDo2AJEZLuS1yEuQIE6tiPzEb8anqjJ2a9K%2BMJaNy1cVRs6Coib377mqAA4EDkhwKDWNJlKNKCZwI8xE25XOLwnYWDA%2FGjsmAEVIMA1PPFmJLnCJwfNK0L8lUcZKKaUgD5PauOU%2FFD4zaZlwQqXfdexEX%2BrPirYrKz53%2Fj3Ql5Rt5ey25JcP0qKNzVi4qtutR%2BpTcIXHJXk3KVnoeyTZgqFXNQQFcm6iCOr8xVHhJMUPwf8LdRumi2%2BOo88gH5v4f4zSoa7V4zYBsemjZnEnSeZovm4DHu0wIAY7EAFAL2XGTBuR0Cnd0uETKthc2%2FA0vZn4%2FoBz0MzhH901T6DZXRju0X7pFOaDZQ9vSm67UUaNNMIBtHUhbyzxCi4zqqbn1umUKMFFo3G3b%2BghsWCXKGn5IYAtr8ahO29slDBaL3B47uLMwy%2BDonQY6qQFMs8Vdb4jqT9c6mEjine9XXHSOCMsCn4wgXCkVKbphYd9dBZwSjmmHg0U%2F7WT%2FAYiXzS1SgkflbadSgSNKisuc8Q8mvka9sUcZrpml6noUcXvgkoZIf%2F9dr3ILkcikAJQWv0eUsGU333qhsTyG%2FDJGfVNSk6x%2BAxODsxmscbw5SrTkvbenk79blOzktTiI%2Fu%2BqOz8B%2FxZ7Lg0ci93VmkFvjoLMeFdSh3qc&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230108T031642Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFP6BNUJ7X%2F20230108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=87bab0866a58994a768a4043b3638a024a5ea81feb71a1469ba9aed44651cf03",
+                        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg",
                         "width": 300,
                         "height": 300
                     },
                     "LARGE": {
-                        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/621/62118911d1c95fe1b3fc12f61898a6a8-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQC8AZplSPi6LHxVh%2BwmlSJLsyqm691LnRamnNaf2qI4yQIgPlVabaDuimZgKGN8d33CUVyQvtI4r9VgwGzGoShwKcoqzAQIVBAAGgwxODcwMTcxNTA5ODYiDKLe75WRFW%2BSzIq%2BHyqpBAcXfA4u08uy5yhEsCOPOOydpXetet7m1%2BHQPD8QCAtxGd%2BUIdibtZMs1eLzNEFeVYnfl%2FvtSb4IKYRBC2lWL6%2F7kCk4nMvVCsU5yl%2Bk%2F9Hc5Fy%2FRMrd1goMo%2FwEowDIjyo%2BbxDBXq4LdiBeaU1cS%2BNjGv3PHW%2FeZsDZmkyocZ23%2BORGa%2FGqDPzw0j72N4O6JI1cLeMXxd%2BPOvhQcQ1QKyyutklCbY1HvQNQ6H9mGEE30DjgVjw9mf7ahpv5dqSZ%2FpaHqJSM%2BrmPoDaDdQgw8OC0q90gfr8YUeLXZ5mw34Pq%2FgwDG9%2FkDo2AJEZLuS1yEuQIE6tiPzEb8anqjJ2a9K%2BMJaNy1cVRs6Coib377mqAA4EDkhwKDWNJlKNKCZwI8xE25XOLwnYWDA%2FGjsmAEVIMA1PPFmJLnCJwfNK0L8lUcZKKaUgD5PauOU%2FFD4zaZlwQqXfdexEX%2BrPirYrKz53%2Fj3Ql5Rt5ey25JcP0qKNzVi4qtutR%2BpTcIXHJXk3KVnoeyTZgqFXNQQFcm6iCOr8xVHhJMUPwf8LdRumi2%2BOo88gH5v4f4zSoa7V4zYBsemjZnEnSeZovm4DHu0wIAY7EAFAL2XGTBuR0Cnd0uETKthc2%2FA0vZn4%2FoBz0MzhH901T6DZXRju0X7pFOaDZQ9vSm67UUaNNMIBtHUhbyzxCi4zqqbn1umUKMFFo3G3b%2BghsWCXKGn5IYAtr8ahO29slDBaL3B47uLMwy%2BDonQY6qQFMs8Vdb4jqT9c6mEjine9XXHSOCMsCn4wgXCkVKbphYd9dBZwSjmmHg0U%2F7WT%2FAYiXzS1SgkflbadSgSNKisuc8Q8mvka9sUcZrpml6noUcXvgkoZIf%2F9dr3ILkcikAJQWv0eUsGU333qhsTyG%2FDJGfVNSk6x%2BAxODsxmscbw5SrTkvbenk79blOzktTiI%2Fu%2BqOz8B%2FxZ7Lg0ci93VmkFvjoLMeFdSh3qc&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230108T031642Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFP6BNUJ7X%2F20230108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d690b27a841119b37a513f4b4f332636e6fb75bf53a77ae1247b377dc4d3538d",
+                        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg",
                         "width": 600,
                         "height": 600
                     }
@@ -82,7 +82,7 @@
                         "weight": 13.5,
                         "foodCategory": "Oils",
                         "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
-                        "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
                     },
                     {
                         "text": "1/4 cup chopped yellow onion",
@@ -92,7 +92,7 @@
                         "weight": 40.0,
                         "foodCategory": "vegetables",
                         "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
-                        "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
                     },
                     {
                         "text": "3/4 pound loose sweet Italian sausage",
@@ -102,7 +102,7 @@
                         "weight": 340.1942775,
                         "foodCategory": "Cured meats",
                         "foodId": "food_ad9x10ia5xkw5xb5pz8d6bgho0nt",
-                        "image": "https://www.edamam.com/food-img/1f5/1f5e4b71c948f4c6e6da9db6dbc32e9c.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
                     },
                     {
                         "text": "25 ounces Pomodoro Fresco Tomato Basil Sauce",
@@ -112,7 +112,7 @@
                         "weight": 708.738078125,
                         "foodCategory": "canned soup",
                         "foodId": "food_a7hv5mybkkrs3ub78yhtxafs67bu",
-                        "image": "https://www.edamam.com/food-img/08b/08b3bb49c006689a458a8b9c4a4e0057.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
                     },
                     {
                         "text": "6 cups vegetable stock",
@@ -122,7 +122,7 @@
                         "weight": 1362.0,
                         "foodCategory": "Vegan products",
                         "foodId": "food_bb2qjrjamst0vmam39stubtkmrs4",
-                        "image": "https://www.edamam.com/food-img/e61/e6184a8681b772e5198ef0ca1919e1b7.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
                     },
                     {
                         "text": "9 ounces No-boil lasagna",

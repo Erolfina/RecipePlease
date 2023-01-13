@@ -12,31 +12,24 @@ class RecipeTableViewCell: UITableViewCell {
     @IBOutlet weak var titleRecipeLabel: UILabel!
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var ingredientsRecipeLabel: UILabel!
-    @IBOutlet weak var likeLabel: UILabel!
+    @IBOutlet weak var cuisineType: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func configureCell(ingredients: [Ingredient], title: String) {
+    func configureCell(ingredients: [Ingredient], title: String, time: Int, cuisine: [CuisineType], photos: String) {
+        let minute = " m"
         titleRecipeLabel.text = title
-        
-       
-        //ingredientsRecipeLabel.text = ingredients.food
-
-
-        
-        
-        
+        photo.image = UIImage(named: photos)
+        ingredients.forEach { ingredientsRecipeLabel.text = $0.food }
+        cuisine.forEach { cuisineType.text = $0.rawValue }
+        timeLabel.text = String(time) + minute
+    
     }
 
 }
