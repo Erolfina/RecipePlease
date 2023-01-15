@@ -10,6 +10,7 @@ import UIKit
 class TableViewController: UITableViewController {
     
     var recipeArray = [Hit]()
+    var keyword = [String]()
 
 
     override func viewDidLoad() {
@@ -17,8 +18,40 @@ class TableViewController: UITableViewController {
         
         guard let data = readJSONFromFile(forName: "recipes") else { return }
         parse(jsonData: data)
+       
     }
     
+    // MARK: - Methods
+    
+     func filterRecipes() {
+        var result: [String] = []
+        let ingredients = recipeArray.map{ $0.recipe.label }
+        
+        for word in keyword {
+            let research = word
+            
+            ingredients.forEach { element in
+                if element.contains(research) {
+                    print(element)
+                    result.append(element)
+                    keyword = result
+                    print(keyword)
+                }
+            }
+        }
+    }
+    
+    private func showRecipes() {
+        filterRecipes()
+        
+        if keyword != [""] {
+            
+        }
+        
+    }
+    
+    
+    // MARK: - JSON
     func readJSONFromFile(forName fileName: String) -> Data? {  // lire le fichier json
             do {
                 if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
@@ -41,6 +74,7 @@ class TableViewController: UITableViewController {
                 print("error: \(error)")
             }
         }
+    
 
     // MARK: - Table view data source
 
@@ -64,5 +98,7 @@ class TableViewController: UITableViewController {
         )
         return cell
     }
+    
+ 
 
 }

@@ -12,8 +12,10 @@ class SearchViewController: UIViewController {
     //MARK: Properties
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var labelIngredients: UILabel!
-    var ingredientsInFridge: [String?] = [""]
+    var ingredientsInFridge: [String] = [""]
     var listIngrendient = ""
+    var recipeArray = [Recipe]()
+
     
     //MARK: Lifecycle
     
@@ -37,7 +39,16 @@ class SearchViewController: UIViewController {
         ingredientsInFridge = [""]
         labelIngredients.text = ""
     }
-  
+   
+    @IBAction func searchButtonDidClick(_ sender: Any) {
+        guard let recipeVC = storyboard?.instantiateViewController(withIdentifier: "recipeVC") as? TableViewController else { return }
+        //variable du new VC = variable du VC actuel
+        print(ingredientsInFridge)
+        recipeVC.keyword = ingredientsInFridge
+        print(recipeVC.keyword)
+        show(recipeVC, sender: sender)
+    
+    }
 }
 
 extension SearchViewController: UITextFieldDelegate {
