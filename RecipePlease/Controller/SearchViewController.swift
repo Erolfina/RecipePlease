@@ -16,23 +16,19 @@ class SearchViewController: UIViewController {
     var listIngrendient = ""
     var recipeArray = [Recipe]()
 
-    
     //MARK: Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         labelIngredients.text = ""
     }
     
     //MARK: Methods
-    
     @IBAction func addIngredients(_ sender: Any) {
         textField.clearButtonMode = .always
         guard let ingredient = textField.text else { return }
         textField.text = ""
         ingredientsInFridge.append(ingredient)
         labelIngredients.text! +=  ingredient+"\n"
-        
     }
     
     @IBAction func clearList(_ sender: Any) {
@@ -43,27 +39,20 @@ class SearchViewController: UIViewController {
     @IBAction func searchButtonDidClick(_ sender: Any) {
         guard let recipeVC = storyboard?.instantiateViewController(withIdentifier: "recipeVC") as? TableViewController else { return }
         //variable du new VC = variable du VC actuel
-        print(ingredientsInFridge)
-        recipeVC.keyword = ingredientsInFridge
-        print(recipeVC.keyword)
+        recipeVC.researchIngredient = ingredientsInFridge
         show(recipeVC, sender: sender)
-    
     }
 }
 
 extension SearchViewController: UITextFieldDelegate {
     
     //MARK: Methods Keyboard
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
-        
     }
     
     @IBAction func dismiss(_ sender: UITapGestureRecognizer) {
          textField.resignFirstResponder()
     }
-    
-    
 }

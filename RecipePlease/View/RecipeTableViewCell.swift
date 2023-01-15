@@ -23,7 +23,7 @@ class RecipeTableViewCell: UITableViewCell {
     }
     
     func configureCell(ingredients: [Ingredient], title: String, time: Int, cuisine: [CuisineType], photos: String) {
-        let minute = " min "
+      let minute = " min "
         titleRecipeLabel.text = title
         photo.image = UIImage(named: photos)
         ingredients.forEach { ingredientsRecipeLabel.text = $0.food }
@@ -31,6 +31,8 @@ class RecipeTableViewCell: UITableViewCell {
         timeLabel.text = String(time) + minute
         bottomLabel.applyGradient()
     }
+    
+    
 
 }
 

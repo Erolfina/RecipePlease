@@ -14,6 +14,7 @@
 		7926BA77296BC4E300992042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7926BA76296BC4E300992042 /* Assets.xcassets */; };
 		7926BA7A296BC4E300992042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7926BA78296BC4E300992042 /* LaunchScreen.storyboard */; };
 		795951F5296FC96F0051D57C /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795951F4296FC96F0051D57C /* RecipeTableViewCell.swift */; };
+		79DA6A212973959000FC30DF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA6A202973959000FC30DF /* Model.swift */; };
 		79DEBA1D296E183F00E0E2E1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DEBA1C296E183F00E0E2E1 /* TabBarController.swift */; };
 		79DEBA25296E91A300E0E2E1 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 79DEBA24296E91A300E0E2E1 /* recipes.json */; };
 		79DEBA27296E929B00E0E2E1 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DEBA26296E929B00E0E2E1 /* Recipes.swift */; };
@@ -30,6 +31,7 @@
 		7926BA79296BC4E300992042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7926BA7B296BC4E300992042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795951F4296FC96F0051D57C /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		79DA6A202973959000FC30DF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		79DEBA1C296E183F00E0E2E1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		79DEBA24296E91A300E0E2E1 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		79DEBA26296E929B00E0E2E1 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				79DEBA24296E91A300E0E2E1 /* recipes.json */,
 				79DEBA26296E929B00E0E2E1 /* Recipes.swift */,
+				79DA6A202973959000FC30DF /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				79DEBA1D296E183F00E0E2E1 /* TabBarController.swift in Sources */,
 				7926BA6E296BC4E100992042 /* AppDelegate.swift in Sources */,
 				7926BA70296BC4E100992042 /* SceneDelegate.swift in Sources */,
+				79DA6A212973959000FC30DF /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
