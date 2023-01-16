@@ -37,10 +37,10 @@ class SearchViewController: UIViewController {
     }
    
     @IBAction func searchButtonDidClick(_ sender: Any) {
-        guard let recipeVC = storyboard?.instantiateViewController(withIdentifier: "recipeVC") as? TableViewController else { return }
+        guard let recipeTableVC = storyboard?.instantiateViewController(withIdentifier: "recipeTableVC") as? RecipeTableViewController else { return }
         //variable du new VC = variable du VC actuel
-        recipeVC.researchIngredient = ingredientsInFridge
-        show(recipeVC, sender: sender)
+        recipeTableVC.researchIngredient = ingredientsInFridge
+        show(recipeTableVC, sender: sender)
     }
 }
 

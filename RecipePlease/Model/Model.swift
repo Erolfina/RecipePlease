@@ -9,13 +9,13 @@ import Foundation
 
 struct Recipes: Codable {
     
-    let title: String
+    let titleRecipe: String
     let imageName: String
     let ingredient: [Ingredient]
-    let type: [CuisineType]
-    let time : Int
-    
-    
+    let ingredientLines: [String]
+    let typeCuisine: [CuisineType]
+    let timeCooking : Int
+    let urlRecipe: String
 }
 
  

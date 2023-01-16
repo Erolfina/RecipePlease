@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class RecipeTableViewController: UITableViewController {
     
     var recipeArray = [Recipes]()
     var researchIngredient = [String]()
@@ -20,9 +20,6 @@ class TableViewController: UITableViewController {
         guard let data = readJSONFromFile(forName: "recipes") else { return }
         parse(jsonData: data)
         filterRecipes()
-        print(recipeFiltered)
-        
-       
     }
     
     // MARK: - JSON
@@ -46,11 +43,13 @@ class TableViewController: UITableViewController {
             for hit in decodedData.hits {
                 
                 //on let recipe =  Recipes
-                let recipe = Recipes(title: hit.recipe.label,
+                let recipe = Recipes(titleRecipe: hit.recipe.label,
                                      imageName: hit.recipe.image,
                                      ingredient: hit.recipe.ingredients,
-                                     type: hit.recipe.cuisineType,
-                                     time: hit.recipe.totalTime)
+                                     ingredientLines: hit.recipe.ingredientLines,
+                                     typeCuisine: hit.recipe.cuisineType,
+                                     timeCooking: hit.recipe.totalTime,
+                                     urlRecipe: hit.recipe.url)
                 recipeArray.append(recipe)
             }
         } catch {
@@ -61,22 +60,30 @@ class TableViewController: UITableViewController {
     // MARK: - Methods
     
     func filterRecipes() {
- 
-        researchIngredient.enumerated().forEach { (index, ingredient) in
-            
-            let recipe = Recipes(title: recipeArray[index].title,
-                                 imageName: recipeArray[index].imageName,
-                                 ingredient: recipeArray[index].ingredient,
-                                 type: recipeArray[index].type,
-                                 time: recipeArray[index].time)
         
+        if researchIngredient != [""] {
+            
+            researchIngredient.enumerated().forEach { (index, ingredient) in
+                
+                let recipe = Recipes(titleRecipe: recipeArray[index].titleRecipe,
+                                     imageName: recipeArray[index].imageName,
+                                     ingredient: recipeArray[index].ingredient,
+                                     ingredientLines: recipeArray[index].ingredientLines,
+                                     typeCuisine: recipeArray[index].typeCuisine,
+                                     timeCooking: recipeArray[index].timeCooking,
+                                     urlRecipe:recipeArray[index].urlRecipe)
+                
                 recipeArray.forEach { recipe in
-                    if recipe.title.contains(ingredient) {
+                    if recipe.titleRecipe.contains(ingredient) {
                         recipeFiltered.append(recipe)
+                        
                     }
                 }
             }
+        } else {
+            recipeFiltered = recipeArray
         }
+    }
     
     // MARK: - Table view data source
     
@@ -85,21 +92,32 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recipeFiltered.count
+      
+            return recipeFiltered.count
+      
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as? RecipeTableViewCell else {
             return UITableViewCell()
         }
-        
+     
         cell.configureCell(ingredients: recipeFiltered[indexPath.row].ingredient,
-                           title: recipeFiltered[indexPath.row].title,
-                           time: recipeFiltered[indexPath.row].time,
-                           cuisine: recipeFiltered[indexPath.row].type,
-                           photos: recipeFiltered[indexPath.row].imageName)
-        
-        return cell
+                           title: recipeFiltered[indexPath.row].titleRecipe,
+                           time: recipeFiltered[indexPath.row].timeCooking,
+                               cuisine: recipeFiltered[indexPath.row].typeCuisine,
+                               photos: recipeFiltered[indexPath.row].imageName)
+            
+            return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //creer un UIcontroller
+        guard let recipeVC = storyboard?.instantiateViewController(withIdentifier: "recipeVC") as? RecipeViewController else { return }
+        let ingredients = recipeFiltered[indexPath.row].ingredientLines
+        recipeVC.ingredientsList.append(contentsOf: ingredients)
+        recipeVC.imageName = recipeFiltered[indexPath.row].imageName
+        recipeVC.URLRecipe = recipeFiltered[indexPath.row].urlRecipe
+        present(recipeVC, animated: true)
+    }
 }
