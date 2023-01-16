@@ -29,7 +29,6 @@ class RecipeViewController: UIViewController {
     
     private func updateIngredients() {
         
-        
         ingredientsList.enumerated().forEach { (index, ingredient) in
             recipeIngredientsList.text! += ingredientsList[index]+"\n"
         }
@@ -42,7 +41,6 @@ class RecipeViewController: UIViewController {
   @IBAction func buttonClicked(_ sender: Any) {
         guard let url = URL(string: URLRecipe) else { return }
             UIApplication.shared.open(url)
-      print(url)
         }
 
 }

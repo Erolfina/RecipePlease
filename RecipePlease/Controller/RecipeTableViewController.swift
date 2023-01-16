@@ -64,19 +64,9 @@ class RecipeTableViewController: UITableViewController {
         if researchIngredient != [""] {
             
             researchIngredient.enumerated().forEach { (index, ingredient) in
-                
-                let recipe = Recipes(titleRecipe: recipeArray[index].titleRecipe,
-                                     imageName: recipeArray[index].imageName,
-                                     ingredient: recipeArray[index].ingredient,
-                                     ingredientLines: recipeArray[index].ingredientLines,
-                                     typeCuisine: recipeArray[index].typeCuisine,
-                                     timeCooking: recipeArray[index].timeCooking,
-                                     urlRecipe:recipeArray[index].urlRecipe)
-                
                 recipeArray.forEach { recipe in
                     if recipe.titleRecipe.contains(ingredient) {
                         recipeFiltered.append(recipe)
-                        
                     }
                 }
             }
